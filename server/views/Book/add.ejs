@@ -1,0 +1,34 @@
+<%- include ../Partials/header.ejs%>
+<%- include ../Partials/main_nav.ejs%>
+<!--Content for Add Page-->
+<div class="container">
+    <div class="row">
+        <div class="offset-md-3 col-md-6">
+            <h1><%= title %></h1>
+            <form class="form" method="POST">
+                <div class="form-group">
+                    <label for="nameTextField">Workout</label>
+                    <input type="text" class="form-control" id="nameTextField" placeholder="Which workout did you do?" name="Name" required>
+                </div>
+                <div class="form-group">
+                    <label for="authorTextField">Sets</label>
+                    <input type="text" class="form-control" id="authorTextField" placeholder="How many sets did you do?" name="Author" required>
+                </div>
+                <div class="form-group">
+                    <label for="publishedTextField">Reps</label>
+                    <input type="text" class="form-control" id="publishedTextField" placeholder="How many reps did you do?" name="Published" required>
+                </div>
+                <div class="form-group">
+                    <label for="descriptionTextArea">Targeted Muscle</label>
+                    <textarea type="text" class="form-control" id="descriptionTextArea"  placeholder="Muscle/Muscle groups targeted" name="Description" required></textarea>
+                </div>
+                
+                <button class="btn btn-primary" type="submit">Submit
+                <i class="fas fa-edit"></i></button>  
+                <button class="btn btn-warning" type="submit">Cancel
+                    <i class="fas fa-undo"></i></button>    
+            </form>
+        </div>
+    </div>
+</div>
+<%- include ../Partials/footer.ejs%>
